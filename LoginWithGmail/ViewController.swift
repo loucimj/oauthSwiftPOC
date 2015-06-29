@@ -20,17 +20,13 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
-        // Initialize sign-in
         var configureError: NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
         
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
-        
-        // Uncomment to automatically sign in the user.
-        
+    
         if (GIDSignIn.sharedInstance().hasAuthInKeychain()){
             // Signed in
             self.signInButton.hidden = true
@@ -63,9 +59,9 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
         withError error: NSError!) {
             if (error == nil) {
-                // Perform any operations on signed in user here.
-                let userId = user.userID                  // For client-side use only!
-                let idToken = user.authentication.idToken // Safe to send to the server
+
+                let userId = user.userID
+                let idToken = user.authentication.idToken
                 let name = user.profile.name
                 let email = user.profile.email
                 
@@ -77,18 +73,11 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
                 self.emailID.text = user.profile.email
                 self.userToken.text = user.authentication.idToken
                 
-                
-                // ...
             } else {
                 println("\(error.localizedDescription)")
             }
     }
-    
-    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
-        withError error: NSError!) {
-            // Perform any operations when the user disconnects from app here.
-            // ...
-    }
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
