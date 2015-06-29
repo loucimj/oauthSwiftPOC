@@ -1,0 +1,2 @@
+PODS_LOGINWITHGMAIL_GOOGLESIGNIN_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/GoogleSignIn/Libraries"
+PODS_LOGINWITHGMAIL_GOOGLESIGNIN_OTHER_LDFLAGS = -l"SignIn" -framework "CoreText" -framework "Security" -framework "StoreKit"

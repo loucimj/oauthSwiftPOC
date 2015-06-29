@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="LoginWithGmail" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nn-eV-QSF" customClass="GIDSignInButton">
+                                <rect key="frame" x="80" y="495" width="160" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="8LC-Hi-rlN"/>
+                                    <constraint firstAttribute="width" constant="160" id="qh4-Tw-T0T"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqd-iV-x2a">
+                                <rect key="frame" x="30" y="62" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Not Logged in yet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqL-aU-xSq">
+                                <rect key="frame" x="109" y="62" width="195" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qy-Eg-xjR">
+                                <rect key="frame" x="30" y="126" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Not Logged in yet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg2-w5-Dye">
+                                <rect key="frame" x="129" y="126" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW2-0B-Dyp">
+                                <rect key="frame" x="30" y="195" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Not Logged in yet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bb-df-dan">
+                                <rect key="frame" x="96" y="195" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1J-xk-wtl">
+                                <rect key="frame" x="30" y="262" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Not Logged in yet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPw-xG-vxw">
+                                <rect key="frame" x="96" y="262" width="208" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="225" id="D1k-th-lh7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYZ-2g-h5a">
+                                <rect key="frame" x="132" y="504" width="56" height="30"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H1N-4s-tbT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="tYZ-2g-h5a" secondAttribute="centerX" id="0FY-bK-QTm"/>
+                            <constraint firstItem="Fqd-iV-x2a" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="42" id="1i2-Gz-YjU"/>
+                            <constraint firstItem="dg2-w5-Dye" firstAttribute="top" secondItem="LqL-aU-xSq" secondAttribute="bottom" constant="43" id="63t-Fw-KVR"/>
+                            <constraint firstItem="8bb-df-dan" firstAttribute="top" secondItem="dg2-w5-Dye" secondAttribute="bottom" constant="48" id="B4R-ie-UPc"/>
+                            <constraint firstItem="8bb-df-dan" firstAttribute="leading" secondItem="wW2-0B-Dyp" secondAttribute="trailing" constant="14" id="BJ0-Rx-F8V"/>
+                            <constraint firstItem="dg2-w5-Dye" firstAttribute="leading" secondItem="5qy-Eg-xjR" secondAttribute="trailing" constant="8" id="BNb-9t-l0r"/>
+                            <constraint firstItem="wW2-0B-Dyp" firstAttribute="top" secondItem="5qy-Eg-xjR" secondAttribute="bottom" constant="48" id="D9R-Bt-dII"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9nn-eV-QSF" secondAttribute="bottom" constant="26" id="DSx-YV-sFK"/>
+                            <constraint firstItem="LqL-aU-xSq" firstAttribute="leading" secondItem="Fqd-iV-x2a" secondAttribute="trailing" constant="12" id="EYy-pO-u6k"/>
+                            <constraint firstItem="LqL-aU-xSq" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="GXu-r0-xeq"/>
+                            <constraint firstItem="C1J-xk-wtl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="14" id="HXz-bG-xg5"/>
+                            <constraint firstItem="8bb-df-dan" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Hcl-gr-NPo"/>
+                            <constraint firstItem="wW2-0B-Dyp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="14" id="K8K-Dt-HKJ"/>
+                            <constraint firstAttribute="centerX" secondItem="9nn-eV-QSF" secondAttribute="centerX" id="LlL-84-2xs"/>
+                            <constraint firstItem="EPw-xG-vxw" firstAttribute="leading" secondItem="C1J-xk-wtl" secondAttribute="trailing" constant="11" id="OTk-VM-Rak"/>
+                            <constraint firstItem="LqL-aU-xSq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="42" id="RnG-zQ-iaA"/>
+                            <constraint firstItem="5qy-Eg-xjR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="14" id="bt8-ra-Wyn"/>
+                            <constraint firstItem="EPw-xG-vxw" firstAttribute="top" secondItem="8bb-df-dan" secondAttribute="bottom" constant="46" id="cGW-K8-yze"/>
+                            <constraint firstItem="dg2-w5-Dye" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="knV-9A-3Xs"/>
+                            <constraint firstItem="Fqd-iV-x2a" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="14" id="r3v-37-d3F"/>
+                            <constraint firstItem="C1J-xk-wtl" firstAttribute="top" secondItem="wW2-0B-Dyp" secondAttribute="bottom" constant="46" id="sAd-mz-PXd"/>
+                            <constraint firstItem="EPw-xG-vxw" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ti7-F7-fSi"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tYZ-2g-h5a" secondAttribute="bottom" constant="34" id="wIj-zr-eeg"/>
+                            <constraint firstItem="5qy-Eg-xjR" firstAttribute="top" secondItem="Fqd-iV-x2a" secondAttribute="bottom" constant="43" id="xyK-10-jWG"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailID" destination="8bb-df-dan" id="THA-aa-AMp"/>
+                        <outlet property="signInButton" destination="9nn-eV-QSF" id="w1Q-zH-Awr"/>
+                        <outlet property="signOutButton" destination="tYZ-2g-h5a" id="erW-QV-451"/>
+                        <outlet property="userID" destination="LqL-aU-xSq" id="13W-mr-Zh2"/>
+                        <outlet property="userName" destination="dg2-w5-Dye" id="fkW-xa-q8i"/>
+                        <outlet property="userToken" destination="EPw-xG-vxw" id="h1P-t1-Uzw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
